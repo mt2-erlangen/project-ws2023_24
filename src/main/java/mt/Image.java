@@ -97,16 +97,6 @@ public class Image extends Signal {
         }
     }
 
-    public void setBufferFromCenterArea(int width, int height, float[] buffer, int inputWidth, int inputHeight) {
-        int offsetWidth = (inputWidth - width) / 2;
-        int offsetHeigth = (inputHeight - height) / 2;
-        for (int y = minIndexY; y < minIndexY + height; ++y) {
-            for (int x = minIndexX; x < minIndexX+ width; ++x) {
-                this.setAtIndex(x, y, buffer[(y + offsetHeigth) * inputWidth + (x + offsetWidth)]);
-            }
-        }
-    }
-
     public int minIndexX() {
         return minIndexX;
     }
