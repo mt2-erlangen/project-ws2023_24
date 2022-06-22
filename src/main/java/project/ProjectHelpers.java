@@ -117,69 +117,70 @@ public class ProjectHelpers {
         }
     }
 
-//    // Apply FFT to ComplexSignal
-//    public static ComplexSignal FFT1D(ComplexSignal signal) {
-//        var x = toComplex(signal);
-//
-//        return fromComplex(fft(x), signal, "FFT");
-//    }
-//
-//    public static Complex[] toComplex(ComplexSignal signal) {
-//        Complex[] x = new Complex[signal.getSize()];
-//
-//        for (int i = signal.real.minIndex(); i < signal.real.minIndex() + signal.real.size(); ++i) {
-//            x[i] = new Complex(signal.real.atIndex(i), signal.imag.atIndex(i));
-//        }
-//
-//        return x;
-//    }
-//
-//    // Convert Complex to ComplexSignal type
-//    public static ComplexSignal fromComplex(Complex[] x, ComplexSignal signal, String name) {
-//        ComplexSignal output = new ComplexSignal(signal.getSize(), name);
-//        for (int i = signal.real.minIndex(); i < signal.real.minIndex() + signal.real.size(); ++i) {
-//            output.real.setAtIndex(i, (float) x[i].getReal());
-//            output.imag.setAtIndex(i, (float) x[i].getImaginary());
-//        }
-//        return output;
-//    }
-//
-//    // Reference: https://introcs.cs.princeton.edu/java/97data/FFT.java.html
-//    // Copyright © 2000–2019, Robert Sedgewick and Kevin Wayne.
-//    // compute the FFT of x[], assuming its length n is a power of 2
-//    public static Complex[] fft(Complex[] x) {
-//        int n = x.length;
-//
-//        // base case
-//        if (n == 1) return new Complex[]{x[0]};
-//
-//        // radix 2 Cooley-Tukey FFT
-//        if (n % 2 != 0) {
-//            throw new IllegalArgumentException("n is not a power of 2");
-//        }
-//
-//        // compute FFT of even terms
-//        Complex[] even = new Complex[n / 2];
-//        for (int k = 0; k < n / 2; k++) {
-//            even[k] = x[2 * k];
-//        }
-//        Complex[] evenFFT = fft(even);
-//
-//        // compute FFT of odd terms
-//        Complex[] odd = even;  // reuse the array (to avoid n log n space)
-//        for (int k = 0; k < n / 2; k++) {
-//            odd[k] = x[2 * k + 1];
-//        }
-//        Complex[] oddFFT = fft(odd);
-//
-//        // combine
-//        Complex[] y = new Complex[n];
-//        for (int k = 0; k < n / 2; k++) {
-//            double kth = -2 * k * Math.PI / n;
-//            Complex wk = new Complex(Math.cos(kth), Math.sin(kth));
-//            y[k] = evenFFT[k].add(wk.multiply(oddFFT[k]));
-//            y[k + n / 2] = evenFFT[k].subtract(wk.multiply(oddFFT[k]));
-//        }
-//        return y;
-//    }
+/*
+      // Apply FFT to ComplexSignal
+    public static ComplexSignal FFT1D(ComplexSignal signal) {
+        var x = toComplex(signal);
+
+        return fromComplex(fft(x), signal, "FFT");
+    }
+
+    public static Complex[] toComplex(ComplexSignal signal) {
+        Complex[] x = new Complex[signal.getSize()];
+
+        for (int i = signal.real.minIndex(); i < signal.real.minIndex() + signal.real.size(); ++i) {
+            x[i] = new Complex(signal.real.atIndex(i), signal.imag.atIndex(i));
+        }
+
+        return x;
+    }
+
+    // Convert Complex to ComplexSignal type
+    public static ComplexSignal fromComplex(Complex[] x, ComplexSignal signal, String name) {
+        ComplexSignal output = new ComplexSignal(signal.getSize(), name);
+        for (int i = signal.real.minIndex(); i < signal.real.minIndex() + signal.real.size(); ++i) {
+            output.real.setAtIndex(i, (float) x[i].getReal());
+            output.imag.setAtIndex(i, (float) x[i].getImaginary());
+        }
+        return output;
+    }
+
+    // Reference: https://introcs.cs.princeton.edu/java/97data/FFT.java.html
+    // Copyright © 2000–2019, Robert Sedgewick and Kevin Wayne.
+    // compute the FFT of x[], assuming its length n is a power of 2
+    public static Complex[] fft(Complex[] x) {
+        int n = x.length;
+
+        // base case
+        if (n == 1) return new Complex[]{x[0]};
+
+        // radix 2 Cooley-Tukey FFT
+        if (n % 2 != 0) {
+            throw new IllegalArgumentException("n is not a power of 2");
+        }
+
+        // compute FFT of even terms
+        Complex[] even = new Complex[n / 2];
+        for (int k = 0; k < n / 2; k++) {
+            even[k] = x[2 * k];
+        }
+        Complex[] evenFFT = fft(even);
+
+        // compute FFT of odd terms
+        Complex[] odd = even;  // reuse the array (to avoid n log n space)
+        for (int k = 0; k < n / 2; k++) {
+            odd[k] = x[2 * k + 1];
+        }
+        Complex[] oddFFT = fft(odd);
+
+        // combine
+        Complex[] y = new Complex[n];
+        for (int k = 0; k < n / 2; k++) {
+            double kth = -2 * k * Math.PI / n;
+            Complex wk = new Complex(Math.cos(kth), Math.sin(kth));
+            y[k] = evenFFT[k].add(wk.multiply(oddFFT[k]));
+            y[k + n / 2] = evenFFT[k].subtract(wk.multiply(oddFFT[k]));
+        }
+        return y;
+    }*/
 }
