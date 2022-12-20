@@ -1,6 +1,6 @@
-# MT2 - Exercises Summer term 2022 (exercises-ss2022)
+# MT2 - Project Winter term 2022 (exercises-ws2022)
 
-This is the project template for the MT2 exercises for summer semester 2022.
+This is the project template for the MT2 exercises for winter semester 2022.
 You can download or clone the repository to get a skeleton for your homeworks.
 We will publish the solutions of the homeworks here at a announced time.
 
