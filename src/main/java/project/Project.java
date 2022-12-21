@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class Project {
     public static void main(String[] args) {
         (new ij.ImageJ()).exitWhenQuitting(true);
-        ComplexImage kSpace = ProjectHelpers.LoadKSpace("k_space_data.h5");
+        ComplexImage kSpace = ProjectHelpers.LoadKSpace("kdata.h5");
 
         /* Implement your code based on the project description */
     }
