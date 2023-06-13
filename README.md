@@ -1,10 +1,6 @@
-# MT2 - Project Winter term 2022 (exercises-ws2022)
+# MT2 - Project Summer term 2023 (exercises-ws2023)
 
-This is the project template for the MT2 exercises for winter semester 2022.
-You can download or clone the repository to get a skeleton for your homeworks.
-We will publish the solutions of the homeworks here at a announced time.
-
-You find all instructions for the exercises here: https://mt2-erlangen.github.io/
+This is the project template for the MT2 final project for summer semester 2023.
 
 For **JAVA newbies** we recommend taking free JAVA online courses in advance 
 to be able to start on the same level as the other students, e.g. via 
