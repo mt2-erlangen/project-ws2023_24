@@ -154,9 +154,9 @@ public class ProjectHelpers {
         // base case
         if (n == 1) return new Complex[]{x[0]};
 
-        // radix 2 Cooley-Tukey FFT
-        if (n % 2 != 0) {
-            throw new IllegalArgumentException("n is not a power of 2");
+        // Check if n is a power of 2
+        if (Integer.highestOneBit(n) != n) {
+            throw new RuntimeException("n is not a power of 2");
         }
 
         // compute FFT of even terms
