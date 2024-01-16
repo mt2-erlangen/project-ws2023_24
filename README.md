@@ -1,6 +1,6 @@
-# MT2 - Project Summer term 2023 (exercises-ws2023)
+# MT2 - Project Winter term 2023/24 (exercises-ws2023_24)
 
-This is the project template for the MT2 final project for summer semester 2023.
+This is the project template for the MT2 final project for winter semester 2023/24.
 
 For **JAVA newbies** we recommend taking free JAVA online courses in advance 
 to be able to start on the same level as the other students, e.g. via 
