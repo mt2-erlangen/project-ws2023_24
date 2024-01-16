@@ -94,6 +94,7 @@ public class DisplayUtils {
 
         plus.setCalibration(calibration);
         plus.show();
+        ij.IJ.run("Enhance Contrast", "saturated=0.35");
         ij.IJ.run("Tile");
     }
 
